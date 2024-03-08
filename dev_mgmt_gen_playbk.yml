@@ -1,0 +1,11 @@
+---
+# First Block proceedure 
+# playbook will generate device management configuration
+- name: Device Manage Configuration - Playbook Generator
+  hosts: localhost
+  gather_facts: no
+  # vars_files:
+  #   - vars/host_vars.yml
+
+  roles:
+    - role: roles/device-mgmt

@@ -1,0 +1,11 @@
+//Redhat office UBI8 release uses python version 3.6
+{
+    "name": "Cisco Packet Tracer Template Generator",
+    "dockerFile": "Dockerfile",
+    "extensions": [
+      "ms-python.python"
+    ],
+    "settings": {
+      "python.pythonPath": "/usr/bin/python3"
+    }
+  }

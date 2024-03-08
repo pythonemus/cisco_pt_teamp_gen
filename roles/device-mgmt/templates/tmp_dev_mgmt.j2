@@ -1,0 +1,25 @@
+!
+{% if service_password_encrypt == 'enable' %}
+service-password encryption
+{% endif %}
+!
+enable secret {{ secret }}
+!
+banner motd ${{ motd }}$
+!
+{% if domain_lookup == 'enable' %}
+no ip domain-lookup
+{% endif %}
+!
+line console 0
+  password {{ cons_pass }}
+  logging synchronous
+  login
+  exec-timeout {{ exec_time_out_min }} {{ exec_time_out_sec }}
+!
+line vty {{ vty_rng_start }}-{{ vty_rng_end }}
+  password {{ cons_pass }}
+  logging synchronous
+  login
+  exec-timeout {{ exec_time_out_min }} {{ exec_time_out_sec }}
+!

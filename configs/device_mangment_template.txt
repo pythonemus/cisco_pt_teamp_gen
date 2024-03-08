@@ -1,0 +1,20 @@
+!
+!
+enable secret class
+!
+banner motd $CNT160AB Course is the best!!$
+!
+no ip domain-lookup
+!
+line console 0
+  password cisco
+  logging synchronous
+  login
+  exec-timeout 0 0
+!
+line vty 0-15
+  password cisco
+  logging synchronous
+  login
+  exec-timeout 0 0
+!

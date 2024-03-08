@@ -1,0 +1,6 @@
+---
+# Build Device Management Configuration
+- name: Generate Device Mgmt Configs
+  template: 
+    src: tmp_dev_mgmt.j2
+    dest: "{{ configs_dir }}/device_mangment_template.txt"

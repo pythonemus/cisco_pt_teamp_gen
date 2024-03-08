@@ -1,0 +1,24 @@
+#Generated configuration file location
+configs_dir: "./configs"
+
+#Enable the secret password
+secret: 'class'
+
+#Set Banner - Message Of The Day
+motd: 'CNT160AB Course is the best!!'
+
+#Disable Features
+domain_lookup: enable
+service_password_encrypt: disable
+
+#Console Session Configuration
+cons_pass: 'cisco'
+
+#VTY Session Configuration
+vty_pass: 'cisco'
+vty_rng_start: 0
+vty_rng_end: 15
+
+#Session time out
+exec_time_out_min: 0
+exec_time_out_sec: 0
